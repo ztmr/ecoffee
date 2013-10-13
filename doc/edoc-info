@@ -1,0 +1,3 @@
+{application,ecoffee}.
+{packages,[]}.
+{modules,[ecoffee]}.

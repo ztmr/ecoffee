@@ -1,0 +1,16 @@
+%% -*- mode: erlang -*-
+{application, ecoffee,
+ [
+  {description, "CoffeeScript for Erlang"},
+  {vsn, "semver"},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  erlang_js
+                 ]},
+  %% uncomment if this is an active application
+  %% {mod, { ecoffee_app, []}},
+  {env, []}
+ ]}.
+%% vim: set filetype=erlang tabstop=2
