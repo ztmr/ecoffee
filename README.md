@@ -6,4 +6,4 @@ erl> ecoffee:compile (<<"console.log 'hello!'">>).
 
 # TODO and known issues
 - get rid of repetitive creating/destroying JS driver, make a pool of constantly running workers rather
-
+- integration with euglifyjs to return compressed output (via `{minimize, true}` config option)

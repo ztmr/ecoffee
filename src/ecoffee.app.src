@@ -11,6 +11,11 @@
                  ]},
   %% uncomment if this is an active application
   %% {mod, { ecoffee_app, []}},
-  {env, []}
+  {env, [
+         %% Use euglifyjs to compress the output
+         {minimize, false},
+
+         {'__dummy__', true}  % terminator
+  ]}
  ]}.
 %% vim: set filetype=erlang tabstop=2
