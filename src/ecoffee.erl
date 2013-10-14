@@ -1,9 +1,12 @@
 -module (ecoffee).
--export ([compile/1]).
+-export ([start/0, stop/0, compile/1]).
 
 %% The name of the app is the same as our module
 -define (APPNAME, ?MODULE).
 -define (COFFEE_ENGINE_SOURCE_FILENAME, "coffee-script.js").
+
+start () -> application:start (?APPNAME).
+stop () -> application:stop (?APPNAME).
 
 %% XXX: this is not so good, we should rather manage a pool
 %% of compile processes holding the context
